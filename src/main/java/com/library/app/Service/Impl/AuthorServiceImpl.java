@@ -11,7 +11,6 @@ import com.library.app.Service.IAuthorService;
 import com.library.app.entitys.Author;
 
 @Service
-@Transactional
 public class AuthorServiceImpl implements IAuthorService {
 
 	@Autowired
@@ -44,8 +43,8 @@ public class AuthorServiceImpl implements IAuthorService {
 
 	/****************** BUSQUEDAS *********************/
 	@Override
-	public Author getAuthorByName(String name) {
-		return authorDao.findAuthorByName(name);
+	public  List<Author> getAuthorByName(String name) {
+		return authorDao.findByName(name);
 
 	}
 	

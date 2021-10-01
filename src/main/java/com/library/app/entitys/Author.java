@@ -40,6 +40,9 @@ public class Author {
 	private Style style;
 	
 
+	public Author() {}
+	
+	
 	public Author(String name, String surname, Contact contact, Book book, Style style) {
 		super();
 		this.name = name;

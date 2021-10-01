@@ -48,9 +48,9 @@ public class DemoApplication implements CommandLineRunner {
 //
 //		authorService.saveAuthor(a);
 
-//		 Author a3 = authorService.getAuthorByName("pepe");
-//
-//		System.out.println("OBJETO: "+ a3.getName() + a3.getContact()+ a3.getStyle()  );
+		 Author a3 = authorService.getAuthorByName("pepe").get(0);
+
+		System.out.println("OBJETO: "+ a3.getName() + a3.getContact()+ a3.getStyle() +a3.getListBook() );
 
 	}
 

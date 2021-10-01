@@ -33,8 +33,7 @@ public class Book {
 			)
 	private List<Theme> listTheme;
 
-	public Book() {
-	}
+	public Book() {}
 
 	public Book(String title, LocalDate date, Theme theme) {
 		super();

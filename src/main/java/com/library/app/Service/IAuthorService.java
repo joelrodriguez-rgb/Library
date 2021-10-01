@@ -18,6 +18,6 @@ public interface IAuthorService {
 
 	/****************** BUSQUEDAS *********************/
 
-	Author getAuthorByName(String name);
+	 List<Author> getAuthorByName(String name);
 
 }
